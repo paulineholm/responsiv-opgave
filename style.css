@@ -1,0 +1,104 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    text-align: center;
+    color: rgb(116, 118, 121);
+}
+
+img{
+    max-width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.nav{
+    background-color: rgb(110, 147, 215);
+}
+
+.header{
+    background-color: rgb(188, 213, 252);
+    padding: 50px;
+}
+
+.content{
+    background-color: rgb(235, 238, 241);
+    padding: 50px;
+}
+
+.sign-up{
+    background-color: rgb(219, 232, 254);
+    padding: 50px;
+}
+
+.feature1{
+    background-color: rgb(235, 204, 146);
+    padding: 50px;
+}
+
+.feature2{
+    background-color: rgb(219, 153, 156);
+    padding: 50px;
+}
+
+.feature3{
+    background-color: rgb(196, 194, 244);
+    padding: 50px;
+}
+
+/* Tablet størrelsen */
+
+@media only screen and (min-width: 600px){
+    html, body{
+        background-color: chartreuse;
+    }
+    .wrap-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(200px, auto);
+        grid-template-areas:
+        "a a"
+        "b b"
+        "c d"
+        "e f";
+    }
+    .header{
+        grid-area: a;
+    }
+    .content{
+        grid-area: b;
+    }
+    .sign-up{
+        grid-area: c;
+    }
+    .feature1{
+        grid-area: d;
+    }
+    .feature2{
+        grid-area: e;
+    }
+    .feature3{
+        grid-area: f;
+    }
+}
+
+/* Desktop størrelsen */
+
+@media only screen and (min-width: 768px){
+    html, body{
+        background-color: chocolate;
+    }
+    .wrap-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(300px, auto);
+        grid-template-areas:
+        "a a a"
+        "d e f"
+        "c c c"
+        "b b b";
+    }
+}
+
